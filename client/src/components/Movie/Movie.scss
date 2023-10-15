@@ -1,0 +1,22 @@
+.movie-card {
+  margin: 10px;
+}
+
+.poster {
+  object-fit: contain;
+  max-height: 125px;
+  margin-right: 10px;
+  transition: transform 450ms;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+
+.posterLarge {
+  max-height: 250px;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}

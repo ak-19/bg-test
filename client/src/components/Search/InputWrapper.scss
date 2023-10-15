@@ -1,0 +1,21 @@
+.input-search-wrapper {
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.15;
+    padding-left: 10px;
+
+    &:hover {
+        background-color: white;
+        opacity: 0.25;
+    }
+
+    margin-right: 10px;
+    margin-left: 0;
+    max-width: 300px;
+
+    @media (min-width: sm) {
+        margin-left: 3;
+        width: auto;
+    }
+}
