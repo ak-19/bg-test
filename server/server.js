@@ -1,13 +1,13 @@
 import express from 'express';
 import cors from 'cors';
-import { movies } from './movies.js';
-import { genres } from './genres.js';
+
+import { data } from './respository/database.js';
 
 const app = express();
 
 app.use(cors());
 
-app.get('/api', (_, res) => res.json({ movies, genres }));
+app.get('/api', (_, res) => res.json(data));
 
 app.use('/images', express.static('images'));
 app.use('/', express.static('build'));
