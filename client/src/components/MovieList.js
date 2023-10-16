@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Autocomplete, Grid, TextField } from '@mui/material';
+import { Autocomplete, Grid, SvgIcon, TextField } from '@mui/material';
 import { Container, CssBaseline, Stack, Typography } from '@mui/material';
 
 import Movie from './Movie';
 import Search from './Search';
 import { retrieveMovies, setMovieFilter, setMovieSearch } from '../data/moviesReducer';
+
+import './MovieList.scss'
 
 const MovieList = () => {
     const { displayMovies: movies, genres } = useSelector(state => state.movies)
@@ -22,9 +24,7 @@ const MovieList = () => {
     return (
         <Container component="main">
             <CssBaseline />
-            <Typography variant="h2" component="h1" gutterBottom>
-                Movies
-            </Typography>
+            <img className='logo-image' src='/assets/back.png' alt='movies' />
             <Stack direction="column" spacing={2}>
                 <Search searchMovies={(searchText) => setSearch(searchText)} />
                 <Autocomplete
