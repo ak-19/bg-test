@@ -70,8 +70,8 @@
   ```
   docker build -t movies:0.0.1 .
   ```
-- Application is available as docker image from hub.docker.com as "antesplit/bgroup-movies:0.0.5" image, can be started on local machine with command (need to have docker on machine and free 8080 port )
+- Application is available as docker image from hub.docker.com as "antesplit/bgroup-movies:latest" image, can be started on local machine with command (need to have docker on machine and free 8080 port )
   ```
-  docker run -d -p 8080:8080 antesplit/bgroup-movies:0.0.5
+  docker run -d -p 8080:8080 antesplit/bgroup-movies:latest
   ```
 
